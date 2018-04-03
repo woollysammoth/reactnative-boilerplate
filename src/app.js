@@ -24,23 +24,22 @@ class App extends Component {
 
 	startApp() {
 
-  		//Build Tab Config Obj
-  		const tabs = [{
-    		label: 'Home',
-    		screen: 'app.Home',
-    		title: 'Home',
-			icon: iconsMap['ios-film-outline'],
-			selectedIcon: iconsMap['ios-film'],
-    		navigatorStyle: {},
-    		navigatorButtons: {}
-  		}];
+  	//Build Tab Config Obj
+  	const tabs = [{
+    	label: 'Home',
+    	screen: 'app.Home',
+    	title: 'Home',
+      icon: iconsMap['ios-film-outline'],
+      selectedIcon: iconsMap['ios-film'],
+      navigatorStyle: config.appStyle
+  	}];
 
-        //Initiate App
-        Navigation[config.startCtor]({
-          ...config,
-          tabs,
-          passProps: {}
-        });
+    //Initiate App
+    Navigation[config.startCtor]({
+      ...config,
+      tabs,
+      passProps: {}
+    });
 
 	}
 }

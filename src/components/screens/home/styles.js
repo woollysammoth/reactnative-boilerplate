@@ -2,7 +2,7 @@ import { Platform, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
 	container: {
-		backgroundColor: 'black',
+		backgroundColor: '#fff',
 		...Platform.select({
 			ios: {
 				paddingTop: 64
@@ -24,12 +24,12 @@ const styles = StyleSheet.create({
 		marginTop: 30
 	},
 	listHeadingLeft: {
-		color: 'white',
+		color: '#333',
 		fontWeight: 'bold',
 		fontSize: 18
 	},
 	listHeadingRight: {
-		color: 'white',
+		color: '#333',
 		...Platform.select({
 			ios: {
 				fontSize: 15
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
 	},
 	browseListItemText: {
 		flex: 1,
-		color: 'white',
+		color: '#333',
 		paddingLeft: 10,
 		...Platform.select({
 			ios: {

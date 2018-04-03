@@ -16,7 +16,9 @@ const override = {
   type: "bottomTabs",
 	animationType: Platform.OS === 'ios' ? 'slide-down' : 'fade',
 	tabsStyle: {
-    tabBarBackgroundColor: '#f2f2f2'
+    tabBarBackgroundColor: '#444',
+    tabBarSelectedLabelColor:"#fff",
+    tabBarSelectedButtonColor:"#fff"
   },
   appStyle: {
     navBarTextColor: '#fff',
